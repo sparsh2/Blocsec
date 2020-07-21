@@ -1,0 +1,11 @@
+1. Enter the username
+2. Create multiple threads for listening - listening threads
+3. Whenever a new transaction is generated in the main thread, add it to a map(transaction_id,listofrandnum[])
+4. While adding the transaction, store it in a timestamped order.
+5. Also, send the transaction to peers along with a random number for the transaction.
+6. Whenever you listen a transaction from peers, add it to your map in the timestamped order and respond
+   with a random number. 
+7. Create another thread which checks for the length of listofrandnum[] - thread_mine
+8. Wait until len(listofrandnum)!=len(active_users)
+9. Then, create a block of the transaction and add it to the blockchain. 
+(Doubt) I think it should be like someone else should verify your blockchain.

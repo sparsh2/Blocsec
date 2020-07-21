@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <form action='/generate_new_transaction' method="POST">
+            <input type='hidden' name='sender' id='sender' value='Karthikeya'>
+            <input type='hidden' name='receiver' id='receiver' value='Karthikeya door'>
+            <input type='hidden' name='message' id='message' value='Open my door'>
+            <button type='submit' name='Generate' value="Generate" onClick="this.disabled=true;this.value='sending..';this.form.submit();">Open door</button>
+        </form>
+        <form action='/logout' method="POST">
+            <button type='submit' name='logout' value='logout'>Logout</button>
+        </form> 
+    </body>
+</html>
